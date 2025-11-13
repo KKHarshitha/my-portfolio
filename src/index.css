@@ -1,0 +1,40 @@
+/* ======================================
+   FONTS & GLOBAL BASE STYLES (FIXED)
+   ====================================== */
+
+/* 1. Import Inter first — must be the very first thing */
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+  background-color: #0a192f;
+  color: #ccd6f6;
+  font-family: "Calibre", "Inter", sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* adjust for your header height */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #64ffda80;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
