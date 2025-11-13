@@ -173,7 +173,7 @@ export default function App() {
     >
       {/* ✨ Ambient glow */}
       <motion.div
-        className="pointer-events-none fixed top-0 left-0 w-[800px] h-[800px] rounded-full bg-[#64ffff]/10 blur-[100px]"
+        className="pointer-events-none fixed top-0 left-0 w-[800px] h-[800px] rounded-full bg-[#646aff]/10 blur-[100px]"
         style={{
           x: smoothX,
           y: smoothY,
@@ -183,7 +183,7 @@ export default function App() {
       />
       {/* ⭐ Mobile Header */}
       <div className="lg:hidden fixed top-0 left-0 w-full z-50 bg-[#0a192f]/80 backdrop-blur-md px-4 py-4 flex items-center justify-between">
-        <h1 className="text-xl font-bold text-[#64ffda]">Harshitha.dev</h1>
+        <h1 className="text-xl font-bold text-[#64ffda]">Engineer</h1>
 
         {/* Hamburger Button */}
         <button
@@ -227,15 +227,16 @@ export default function App() {
       </motion.div>
 
       {/* LAYOUT */}
-      <div className="flex h-full pt-4 sm:pt-6 lg:pt-8">
+      <div className="flex h-full pt-4 sm:pt-4 lg:pt-4.5">
         {/* LEFT SIDEBAR */}
         <aside className="hidden lg:flex flex-col justify-between w-[380px] h-[calc(100vh-5rem)] px-10 pt-0 fixed top-10 left-4 lg:left-[3cm]">
           <div className="mt-14">
-            <h1 className="text-3xl font-extrabold text-white mb-10">
+            <h1 className="text-3xl font-extrabold text-white mb-5">
               K.K. Harshitha
             </h1>
-            <p className="text-sm text-[#a8b2d1]">
-              Machine Learning Engineer | Cloud Developer
+            <p className="text-l text-[#8892b0] mt-1">Software Engineer | AI, Cloud & Web</p>
+            <p className="text-sm text-[#a8b2d1] ">
+              Code. Create. Ship.
             </p>
             <p className="text-xs text-[#8892b0] mt-2">
               Turning data into impactful systems.
@@ -286,7 +287,7 @@ export default function App() {
           </div>
 
           {/* Circular icons */}
-          <div className="flex gap-4 justify-center mb-20 lg:mb-25 lg:mr-40">
+          <div className="flex gap-4 justify-center mb-20 lg:mb-15 lg:mr-40">
             <a class="block hover:text-slate-200" href="mailto:komalaharshitha72@gmail.com" 
                aria-label="Gmail (opens email)" title="Gmail">
                 <span class="sr-only">Gmail</span>
@@ -319,16 +320,41 @@ export default function App() {
         {/* RIGHT CONTENT */}
         <main className="ml-0 lg:ml-[380px] mr-4 lg:mr-[3cm] flex-1 overflow-y-auto px-4 sm:px-6 lg:px-30 pb-16 space-y-10 h-[calc(100vh-5rem)] scroll-smooth">
           {/* HERO */}
-          <MotionSection id="hero" className="max-w-5xl mx-auto pt-10 lg:pt-17">
+          <MotionSection id="hero" className="max-w-5xl mx-auto pt-28 md:pt-20">
+            {/* Mobile Resume Button – same styling, only visible on mobile */}
+            <div className="mt-6 lg:hidden">
+              <a
+                class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 
+                       focus-visible:text-teal-300 font-semibold group/link text-base"
+                href="/Kukkala_Komala_Harshitha_Resume.pdf"
+                target="_blank"
+                download="Kukkala_Komala_Harshitha_Resume.pdf"
+                aria-label="Download Full Résumé (opens in a new tab)"
+              >
+                Download Resume
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 20 20"
+                     fill="currentColor"
+                     class="inline-block h-4 w-4 shrink-0 transition-transform 
+                            group-hover/link:-translate-y-1 group-hover/link:translate-x-1 
+                            ml-1 translate-y-px"
+                     aria-hidden="true">
+                  <path fill-rule="evenodd"
+                        d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                        clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+
             <p className="text-[#64ffda] mb-3">Hi, my name is</p>
             <h1 className="text-5xl md:text-6xl font-bold mb-4 text-white">
               Kukkala Komala Harshitha.
             </h1>
             <h2 className="text-2xl md:text-3xl font-medium text-[#8892b0] mb-6">
-              I build ML-powered apps & deploy cloud-ready systems.
+              I turn ideas into working systems, from data to design to deployment.
             </h2>
             <p className="max-w-2xl text-[#8892b0] text-lg leading-relaxed">
-              2025 CSE graduate focused on Machine Learning, AWS cloud, and
+              CSE graduate focused on Machine Learning, UI/UX designing, AWS cloud, and
               full-stack development. I like turning data into useful, accessible
               products.
             </p>
@@ -362,10 +388,10 @@ export default function App() {
               specializing in the intersection of Machine Learning and Full-Stack development. I possess hands-on 
               experience in building and deploying complete applications—from robust web UIs (React/Flutter) to 
               scalable backend logic and ML pipelines (Python, AWS SageMaker). My commitment is to deliver high-quality, 
-              measurable results, exemplified by projects like my crime mapping model, which achieved 93.2% accuracy.
-            </p>
-            <p className="text-[#8892b0] leading-7 mt-4">
-              Outside code, I love drawing and quiet nature spots.
+              measurable results, exemplified by projects like my crime mapping model, which achieved 93.2% accuracy.   
+            </p><br />
+            <p className="text-[#8892b0] leading-7">
+              I’m passionate about creating practical, user-centered tech—whether it’s an ML model, a cloud-powered backend, or a simple, clean interface. I love exploring different areas of CS and continuously improving by building, experimenting, and learning. Outside code, I love drawing and quiet nature spots.
             </p>
           </section>
 
@@ -393,10 +419,10 @@ export default function App() {
                 <h3 className="text-xl font-semibold mb-2">Location-Based Alarm App (Travel Alarm)</h3>
                 <p className="text-sm text-[#64ffda] mb-4">Dart, Flutter, Platform Channels</p>
                 <ul className="list-disc ml-5 text-[#8892b0] space-y-2 text-sm">
-                  <li>Goal: Engineered a reliable, cross-platform (Android/iOS) Mobile Application to function as a "Travel Alarm," alerting users upon reaching a set destination.</li>
-                  <li>Core Feature Development: Developed key UI features that allow users to select a destination on a map and visually set a target for future Geofence tracking.</li>
-                  <li>Architecture: Orchestrated a modular widget architecture within the Flutter application, which enhanced code reusability by 30% and enabled faster feature onboarding.</li>
-                  <li>System Integration: Initiated development of Background Location Services and Local Persistence, laying the critical foundation to ensure the alarm reliably fires with a notification even when the app is closed.</li>
+                  <li><b>Goal:</b> Engineered a reliable, cross-platform (Android/iOS) Mobile Application to function as a "Travel Alarm," alerting users upon reaching a set destination.</li>
+                  <li><b>Core Feature Development:</b> Developed key UI features that allow users to select a destination on a map and visually set a target for future Geofence tracking.</li>
+                  <li><b>Architecture:</b> Orchestrated a modular widget architecture within the Flutter application, which enhanced code reusability by 30% and enabled faster feature onboarding.</li>
+                  <li><b>System Integration:</b> Initiated development of Background Location Services and Local Persistence, laying the critical foundation to ensure the alarm reliably fires with a notification even when the app is closed.</li>
                 </ul>
               </article>
 
@@ -404,11 +430,11 @@ export default function App() {
                 <h3 className="text-xl font-semibold mb-2">ML-Powered Crime Hotspots Mapping and Safety Insights</h3>
                 <p className="text-sm text-[#64ffda] mb-4">Python, Scikit-learn, Streamlit</p>
                 <ul className="list-disc ml-5 text-[#8892b0] space-y-2 text-sm">
-                  <li>Goal: To accurately predict and visualize high-risk urban zones by analyzing historical crime data and social media sentiment.</li>
-                  <li>ML Implementation: Implemented a robust Machine Learning pipeline to analyze over 5,000 crime records. Utilized Random Forest for classification and DBSCAN for geospatial hotspot clustering.</li>
-                  <li>Result: Achieved a 93.2% prediction accuracy on a holdout test set.</li>
-                  <li>Deployment: Deployed the trained model as an interactive web application using Streamlit, allowing users to visualize crime severity and hotspots on a real-time map.</li>
-                  <li>Professional Recognition: Authored a formal research paper on the methodology and findings, which was selected by the review committee for Taylor & Francis.</li>
+                  <li><b>Goal:</b> To accurately predict and visualize high-risk urban zones by analyzing historical crime data and social media sentiment.</li>
+                  <li><b>ML Implementation:</b> Implemented a robust Machine Learning pipeline to analyze over 5,000 crime records. Utilized Random Forest for classification and DBSCAN for geospatial hotspot clustering.</li>
+                  <li><b>Result:</b> Achieved a 93.2% prediction accuracy on a holdout test set.</li>
+                  <li><b>Deployment:</b> Deployed the trained model as an interactive web application using Streamlit, allowing users to visualize crime severity and hotspots on a real-time map.</li>
+                  <li><b>Professional Recognition:</b> Authored a formal research paper on the methodology and findings, which was selected by the review committee for Taylor & Francis.</li>
                 </ul>
               </article>
 
@@ -416,9 +442,9 @@ export default function App() {
                 <h3 className="text-xl font-semibold mb-2">Project Trivia (Realtime)</h3>
                 <p className="text-sm text-[#64ffda] mb-4">React, Firebase</p>
                 <ul className="list-disc ml-5 text-[#8892b0] space-y-2 text-sm">
-                  <li>Goal: Architected and built a high-performance, real-time multiplayer trivia game.</li>
-                  <li>Backend Engineering: Leveraged Firebase Realtime Database to synchronize game state across all clients with an average latency of under 200ms.</li>
-                  <li>Frontend Design: Designed a responsive user interface in React, which led to a 25% increase in average user session length compared to the previous version.</li>
+                  <li><b>Goal:</b> Architected and built a high-performance, real-time multiplayer trivia game.</li>
+                  <li><b>Backend Engineering:</b> Leveraged Firebase Realtime Database to synchronize game state across all clients with an average latency of under 200ms.</li>
+                  <li><b>Frontend Design:</b> Designed a responsive user interface in React, which led to a 25% increase in average user session length compared to the previous version.</li>
                 </ul>
               </article>
 
@@ -466,8 +492,38 @@ export default function App() {
             </div>
           </section>
 
+         {/* fixed resume button */}
+          <div class="mt-12">
+            <a
+              class="inline-flex items-baseline font-medium leading-tight text-slate-200 
+                     hover:text-teal-300 focus-visible:text-teal-300 font-semibold 
+                     group/link text-base
+                     border border-[#64ffda]/40 px-4 py-2 rounded-md 
+                     hover:bg-[#64ffda]/10 transition"
+              href="/Kukkala_Komala_Harshitha_Resume.pdf"
+              target="_blank"
+              download="Kukkala_Komala_Harshitha_Resume.pdf"
+              aria-label="Download Full Résumé (opens in a new tab)"
+            >
+              Download Resume
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewBox="0 0 20 20"
+                   fill="currentColor"
+                   class="inline-block h-4 w-4 shrink-0 transition-transform
+                          group-hover/link:-translate-y-1 group-hover/link:translate-x-1 
+                          ml-1 translate-y-px"
+                   aria-hidden="true">
+                <path fill-rule="evenodd"
+                      d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                      clip-rule="evenodd">
+                </path>
+              </svg>
+            </a>
+          </div>
+
+
           {/* CONTACT */}
-          <MotionSection id="contact" className="max-w-5xl mx-auto pb-16">
+          <MotionSection id="contact" className="max-w-5xl mx-auto pb-16 mt-20">
             <h2 className="text-3xl font-bold mb-6 text-white">Get In Touch</h2>
             <p className="text-[#a8b2d1] mb-6">
               I’m open to internships or full-time roles in ML, cloud, and
