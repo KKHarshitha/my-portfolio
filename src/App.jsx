@@ -250,7 +250,7 @@ export default function App() {
                     <path d="M20.5 4h-17A1.5 1.5 0 002 5.5v13A1.5 1.5 0 003.5 20h17a1.5 1.5 0 001.5-1.5v-13A1.5 1.5 0 0020.5 4zm-1.03 2l-7.47 5.44L3.53 6h15.94zM4 17v-9.26l7.23 5.27a1.5 1.5 0 001.54 0L20 7.74V17H4z"/>
                 </svg>
             </a>
-            <a class="block hover:text-slate-200" href="https://www.linkedin.com/in/k-harshitha-1495b7267/" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn (opens in a new tab)" title="LinkedIn">
+            <a class="block hover:text-slate-200" href="https://www.linkedin.com/in/k-komala-harshitha-1495b7267/" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn (opens in a new tab)" title="LinkedIn">
             <span class="sr-only">LinkedIn</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6" aria-hidden="true">
             <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
@@ -301,7 +301,7 @@ export default function App() {
                 <Github size={18} /> GitHub
               </a>
               <a
-                href="https://www.linkedin.com/in/k-harshitha-1495b7267/"
+                href="https://www.linkedin.com/in/k-komala-harshitha-1495b7267/"
                 className="inline-flex items-center gap-2 border border-white/30 text-white px-4 py-2 rounded hover:bg-white/10 transition"
               >
                 <Linkedin size={18} /> LinkedIn
@@ -471,7 +471,7 @@ export default function App() {
               <a href="https://github.com/KKHarshitha" className="inline-flex items-center gap-2">
                 <Github size={16} /> GitHub
               </a>
-              <a href="https://linkedin.com/in/k-harshitha-1495b7267" className="inline-flex items-center gap-2">
+              <a href="https://www.linkedin.com/in/k-komala-harshitha-1495b7267/" className="inline-flex items-center gap-2">
                 <Linkedin size={16} /> LinkedIn
               </a>
               <a href="https://www.instagram.com/your_instagram/" className="inline-flex items-center gap-2">
