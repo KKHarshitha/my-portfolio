@@ -47,52 +47,6 @@ export default function App() {
     "education",
     "contact",
   ];
-  
-<nav className="mt-8 flex flex-col gap-2 relative">
-  {sections.map((s) => (
-    <nav className="mt-8 flex flex-col gap-3 relative">
-  {sections.map((s) => (
-    <motion.button
-      key={s}
-      onClick={() => handleNavClick(s)}
-      whileHover={{
-        scale: 1.08,
-        color: "#ffffff",
-        transition: { type: "spring", stiffness: 200, damping: 20 },
-      }}
-      whileTap={{ scale: 0 }}
-      animate={
-        active === s
-          ? { scale: 0.1, color: "#ffffff", fontWeight: 700, opacity: 0 }
-          : { scale: 0.1, color: "#8892b0", fontWeight: 400, opacity: 0 }
-      }
-      transition={{
-        type: "spring",
-        stiffness: 180,
-        damping: 22,
-        mass: 0.7,
-      }}
-      className="relative text-left text-[1rem] tracking-wide cursor-pointer select-none"
-    >
-      {/* Smooth glowing indicator bar */}
-      {active === s && (
-        <motion.div
-          layoutId="activeIndicator"
-          className="absolute left-[-12px] top-1/2 -translate-y-1/2 w-[3px] h-5 bg-[#64ffda]/80 rounded-full shadow-[0_0_10px_#64ffda]"
-          transition={{
-            type: "spring",
-            stiffness: 260,
-            damping: 24,
-          }}
-        />
-      )}
-      {s.charAt(0).toUpperCase() + s.slice(1)}
-    </motion.button>
-  ))}
-</nav>
-
-  ))}
-</nav>
 
   // Register refs for sections
   useEffect(() => {
@@ -246,12 +200,12 @@ export default function App() {
           <div class="mt-12">
             <a
               class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 font-semibold group/link text-base"
-              href="/Kukkala_Komala_Harshitha_Resume.pdf"
+              href="/my-portfolio/Kukkala_Komala_Harshitha_Resume.pdf"
               target="_blank"
-              download="Kukkala_Komala_Harshitha_Resume.pdf"
+              download="Kukkala_Komala_Harshitha_resume.pdf"
               aria-label="Download Full Résumé (opens in a new tab)"
             >
-              Download Resume
+              Download Full Résumé
               <svg xmlns="http://www.w3.org/2000/svg"
                    viewBox="0 0 20 20"
                    fill="currentColor"
@@ -321,31 +275,6 @@ export default function App() {
         <main className="ml-0 lg:ml-[380px] mr-4 lg:mr-[3cm] flex-1 overflow-y-auto px-4 sm:px-6 lg:px-30 pb-16 space-y-10 h-[calc(100vh-5rem)] scroll-smooth">
           {/* HERO */}
           <MotionSection id="hero" className="max-w-5xl mx-auto pt-28 md:pt-20">
-            {/* Mobile Resume Button – same styling, only visible on mobile */}
-            <div className="mt-6 lg:hidden">
-              <a
-                class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 
-                       focus-visible:text-teal-300 font-semibold group/link text-base"
-                href="/Kukkala_Komala_Harshitha_Resume.pdf"
-                target="_blank"
-                download="Kukkala_Komala_Harshitha_Resume.pdf"
-                aria-label="Download Full Résumé (opens in a new tab)"
-              >
-                Download Resume
-                <svg xmlns="http://www.w3.org/2000/svg"
-                     viewBox="0 0 20 20"
-                     fill="currentColor"
-                     class="inline-block h-4 w-4 shrink-0 transition-transform 
-                            group-hover/link:-translate-y-1 group-hover/link:translate-x-1 
-                            ml-1 translate-y-px"
-                     aria-hidden="true">
-                  <path fill-rule="evenodd"
-                        d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                        clip-rule="evenodd" />
-                </svg>
-              </a>
-            </div>
-
             <p className="text-[#64ffda] mb-3">Hi, my name is</p>
             <h1 className="text-5xl md:text-6xl font-bold mb-4 text-white">
               Kukkala Komala Harshitha.
@@ -500,12 +429,12 @@ export default function App() {
                      group/link text-base
                      border border-[#64ffda]/40 px-4 py-2 rounded-md 
                      hover:bg-[#64ffda]/10 transition"
-              href="/Kukkala_Komala_Harshitha_Resume.pdf"
+              href="/my-portfolio/Kukkala_Komala_Harshitha_Resume.pdf"
               target="_blank"
-              download="Kukkala_Komala_Harshitha_Resume.pdf"
+              download="Kukkala_Komala_Harshitha_resume.pdf"
               aria-label="Download Full Résumé (opens in a new tab)"
             >
-              Download Resume
+              Download Full Résumé
               <svg xmlns="http://www.w3.org/2000/svg"
                    viewBox="0 0 20 20"
                    fill="currentColor"
