@@ -474,7 +474,7 @@ export default function App() {
               <a href="https://www.linkedin.com/in/k-komala-harshitha-1495b7267/" className="inline-flex items-center gap-2">
                 <Linkedin size={16} /> LinkedIn
               </a>
-              <a href="https://www.instagram.com/your_instagram/" className="inline-flex items-center gap-2">
+              <a href="https://instagram.com/k.k.harshitha" className="inline-flex items-center gap-2">
                 <Instagram size={16} /> Instagram
               </a>
             </div>
